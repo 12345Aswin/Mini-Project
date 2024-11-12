@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generation DFD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            border: 1px solid #000;
+            padding: 20px;
+        }
+
+        .box {
+            padding: 10px;
+            border: 2px solid #333;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            position: absolute;
+        }
+
+        .arrow {
+            width: 0; 
+            height: 0; 
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            position: absolute;
+        }
+
+        .horizontal-arrow {
+            border-top: 15px solid #000;
+        }
+
+        .vertical-arrow {
+            border-bottom: 15px solid #000;
+        }
+
+        /* Positioning elements */
+        .user {
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .input-store {
+            top: 150px;
+            left: 10px;
+        }
+
+        .image-system {
+            top: 150px;
+            left: 300px;
+        }
+
+        .ai-model {
+            top: 300px;
+            left: 300px;
+        }
+
+        .image-store {
+            top: 450px;
+            left: 300px;
+        }
+
+        .api-db {
+            top: 150px;
+            right: 10px;
+        }
+
+        /* Positioning arrows */
+        .arrow1 {
+            top: 85px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .arrow2 {
+            top: 170px;
+            left: 170px;
+        }
+
+        .arrow3 {
+            top: 230px;
+            left: 390px;
+        }
+
+        .arrow4 {
+            top: 370px;
+            left: 390px;
+        }
+
+        .arrow5 {
+            top: 220px;
+            right: 160px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Entities and Processes -->
+        <div class="box user">User</div>
+        <div class="box input-store">Input Data Store</div>
+        <div class="box image-system">Image Generation System</div>
+        <div class="box ai-model">AI Model</div>
+        <div class="box image-store">Image Data Store</div>
+        <div class="box api-db">External API/Database</div>
+
+        <!-- Arrows -->
+        <div class="arrow horizontal-arrow arrow1"></div>
+        <div class="arrow horizontal-arrow arrow2"></div>
+        <div class="arrow vertical-arrow arrow3"></div>
+        <div class="arrow vertical-arrow arrow4"></div>
+        <div class="arrow horizontal-arrow arrow5"></div>
+    </div>
+
+</body>
+</html>
